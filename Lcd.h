@@ -27,11 +27,11 @@ public:
 
 	void output(const char &character);
 	void output(const char *string);
-	void output(const uint16_t &val);
+	void output(const uint16_t val);
 
 private:
 	void setPos(const uint8_t &pos);
 
-	virtual void execute(const Command &cmd, bool RS, double delay) = 0;
+	virtual void execute(const Command &cmd, bool RS, uint16_t delay_us) = 0;
 };
 
